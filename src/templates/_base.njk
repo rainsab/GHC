@@ -1,13 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="index.css" />
-        <title>{% block title %}{% endblock %}</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="index.css"/>
+        <title>
+            {% block title %}Generic Hipster Coffee{% endblock %}
+        </title>
     </head>
     <body>
+        <header>
+            <a href="/">
+                <img src="/svg/logo.svg" alt="Generic Hipster Coffee" width="178" height="178">
+            </a>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/menu">Menu</a>
+                <a href="/coffee">Coffee</a>
+                <a href="/our-story">Our Story</a>
+            </nav>
+        </header>
+
+        <main>
+
         {% block content %}{% endblock %}
+
+        </main>
+
+        <footer>
+            <section>
+                <a href="/">Home</a>
+                <a href="/menu">Menu</a>
+                <a href="/coffee">Coffee</a>
+                <a href="/our-story">Our Story</a>
+            </section>
+
+            <p>#hipstersmakecoffee</p>
+            <p>Follow us on
+                <a href="#">Twitter</a>
+                and
+                <a href="#">Instagram</a>
+            </p>
+        </footer>
         {#
         <!-- Optional JavaScript -->
         <!-- Bootstrap JS first and your own script at the end -->
