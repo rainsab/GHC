@@ -3,10 +3,10 @@
 
 {% block content %}  
     <h1>Generic Hipster Coffee</h1>
-    <p class="">Specialty coffee, fresh food &amp; local community</p>
-    <img src="/img/counter.jpg" alt="">
-    <section class="informations">
-        <div class="opening-hours">
+    <p class="h2">Specialty coffee, fresh food &amp; local community</p>
+    <img class="img-fluid" src="/img/counter.jpg" alt="">
+    <section class="d-flex justify-content-between">
+        <div>
             <h2>Opening hours</h2>
             <p>
                 Sunday – Thursday: 8:00 – 23:00
@@ -14,11 +14,11 @@
                 Friday – Saturday: 8:00 – 1:00
             </p>
         </div>
-        <div class="booking">
+        <div>
             <h2>Book a table</h2>
             <p>Call <a href="tel:+14153214567">+1 415-321-4567</a></p>
         </div>
-        <div class="address">
+        <div>
             <h2>Address</h2>
             <p>
                 321 Ivy St.
@@ -28,5 +28,5 @@
         </div>
     </section>
 
-    <img src="/img/map.png" alt="">
+    <img class="img-fluid mx-auto d-block" src="/img/map.png" alt="">
 {% endblock %}
