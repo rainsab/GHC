@@ -53,8 +53,26 @@ function initMap() {
         ]
       },
       {
+        "featureType": "landscape",
+        "elementType": "geometry.fill",
+        "stylers": [
+          {
+            "color": "#e6e6e6"
+          }
+        ]
+      },
+      {
         "featureType": "poi",
         "elementType": "geometry",
+        "stylers": [
+          {
+            "color": "#eeeeee"
+          }
+        ]
+      },
+      {
+        "featureType": "poi",
+        "elementType": "geometry.fill",
         "stylers": [
           {
             "color": "#eeeeee"
