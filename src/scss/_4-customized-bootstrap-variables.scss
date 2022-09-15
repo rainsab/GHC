@@ -600,7 +600,7 @@
 
     $font-weight-base: $font-weight-light; $font-weight-base: $font-weight-base !global; // $font-weight-normal
 
-    // $line-height-base: 1.5; $line-height-base: $line-height-base !global; // 1.5
+    $line-height-base: 1.8; $line-height-base: $line-height-base !global; // 1.5
     // $line-height-sm: 1.25; $line-height-sm: $line-height-sm !global; // 1.25
     // $line-height-lg: 2; $line-height-lg: $line-height-lg !global; // 2
 
@@ -626,7 +626,7 @@
     // $headings-font-family: null; $headings-font-family: $headings-font-family !global; // null
     // $headings-font-style: null; $headings-font-style: $headings-font-style !global; // null
     $headings-font-weight: 300; $headings-font-weight: $headings-font-weight !global; // 500
-    // $headings-line-height: 1.2; $headings-line-height: $headings-line-height !global; // 1.2
+    $headings-line-height: 1.5; $headings-line-height: $headings-line-height !global; // 1.2
     // $headings-color: null; $headings-color: $headings-color !global; // null
 
     /*
