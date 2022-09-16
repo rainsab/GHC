@@ -415,15 +415,15 @@
     // variables. Mostly focused on spacing.
     // You can add more entries to the $spacers map, should you need more variation.
 
-    // $spacer: 1rem; $spacer: $spacer !global; // 1rem
+    $spacer: 1.5rem; $spacer: $spacer !global; // 1rem
 
     
     $spacers: (
         0: 0,
         1: $spacer * .25,
         2: $spacer * .5,
-        3: $spacer * 1.5,
-        4: $spacer * 2,
+        3: $spacer,
+        4: $spacer * 1.5,
         5: $spacer * 3,
     ); $spacers: $spacers !global;
     
@@ -1075,7 +1075,7 @@
 
     // Navbar
 
-    $navbar-padding-y: $spacer; $navbar-padding-y: $navbar-padding-y !global; // $spacer * .5
+    $navbar-padding-y: $spacer * 0.666666666; $navbar-padding-y: $navbar-padding-y !global; // $spacer * .5
     // $navbar-padding-x: null; $navbar-padding-x: $navbar-padding-x !global; // null
 
     // $navbar-nav-link-padding-x: .5rem; $navbar-nav-link-padding-x: $navbar-nav-link-padding-x !global; // .5rem
