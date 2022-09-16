@@ -16,22 +16,22 @@
     <body>
         <header class="bg-light">
             <div class="container">
-                <div class="navbar navbar-expand flex-column flex-md-row justify-content-md-between">
+                <div class="px-3 navbar navbar-expand flex-column flex-md-row justify-content-md-between">
                     <a class="nav-brand" href="/">
                         <img src="/svg/logo.svg" alt="Generic Hipster Coffee" width="178" height="178">
                     </a>
                     <nav class="navbar-nav">
-                        <a class="px-3 nav-link {% block index %}{% endblock %}" href="/">Home</a>
-                        <a class="px-3 nav-link {% block menu %}{% endblock %}" href="/menu">Menu</a>
-                        <a class="px-3 nav-link {% block coffee %}{% endblock %}" href="/coffee">Coffee</a>
-                        <a class="px-3 nav-link {% block ourstory %}{% endblock %}" href="/our-story">Our&nbsp;Story</a>
+                        <a class="nav-link {% block index %}{% endblock %} me-4" href="/">Home</a>
+                        <a class="nav-link {% block menu %}{% endblock %} me-4" href="/menu">Menu</a>
+                        <a class="nav-link {% block coffee %}{% endblock %} me-4" href="/coffee">Coffee</a>
+                        <a class="nav-link {% block ourstory %}{% endblock %}" href="/our-story">Our&nbsp;Story</a>
                     </nav>
                 </div>
             </div>
         </header>
         
 
-        <main class="container">
+        <main class="container px-3">
 
             {% block content %}{% endblock %}
 

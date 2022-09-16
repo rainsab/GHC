@@ -417,16 +417,16 @@
 
     // $spacer: 1rem; $spacer: $spacer !global; // 1rem
 
-    /*
+    
     $spacers: (
         0: 0,
         1: $spacer * .25,
         2: $spacer * .5,
-        3: $spacer,
-        4: $spacer * 1.5,
+        3: $spacer * 1.5,
+        4: $spacer * 2,
         5: $spacer * 3,
     ); $spacers: $spacers !global;
-    */
+    
 
     // Position
     //
@@ -477,30 +477,28 @@
     // Define the minimum dimensions at which your layout will change,
     // adapting to different screen sizes, for use in media queries.
 
-    /*
+    
     $grid-breakpoints: (
         xs: 0,
         sm: 576px,
         md: 768px,
         lg: 992px,
-        xl: 1200px,
-        xxl: 1400px
+        xl: 1200px
     ); $grid-breakpoints: $grid-breakpoints !global;
-    */
+    
 
     // Grid containers
     //
     // Define the maximum width of `.container` for different screen sizes.
 
-    /*
+    
     $container-max-widths: (
         sm: 540px,
         md: 720px,
         lg: 960px,
-        xl: 1140px,
-        xxl: 1320px
+        xl: 1140px
     ); $container-max-widths: $container-max-widths !global;
-    */
+    
 
     // Grid columns
     //
@@ -512,7 +510,7 @@
 
     // Container padding
 
-    // $container-padding-x: $grid-gutter-width; $container-padding-x: $container-padding-x !global; // $grid-gutter-width
+    $container-padding-x: 0; $container-padding-x: $container-padding-x !global; // $grid-gutter-width
 
 
     // Components
@@ -1077,7 +1075,7 @@
 
     // Navbar
 
-    // $navbar-padding-y: $spacer * .5; $navbar-padding-y: $navbar-padding-y !global; // $spacer * .5
+    $navbar-padding-y: $spacer; $navbar-padding-y: $navbar-padding-y !global; // $spacer * .5
     // $navbar-padding-x: null; $navbar-padding-x: $navbar-padding-x !global; // null
 
     // $navbar-nav-link-padding-x: .5rem; $navbar-nav-link-padding-x: $navbar-nav-link-padding-x !global; // .5rem
@@ -1104,7 +1102,7 @@
     // $navbar-dark-toggler-border-color: rgba($white, .1); $navbar-dark-toggler-border-color: $navbar-dark-toggler-border-color !global; // rgba($white, .1)
 
     $navbar-light-color: $secondary; $navbar-light-color: $navbar-light-color !global; // rgba($black, .55)
-    $navbar-light-hover-color: rgba($black, .85); $navbar-light-hover-color: $navbar-light-hover-color !global; // rgba($black, .7)
+    $navbar-light-hover-color: $dark; $navbar-light-hover-color: $navbar-light-hover-color !global; // rgba($black, .7)
     $navbar-light-active-color: $dark; $navbar-light-active-color: $navbar-light-active-color !global; // rgba($black, .9)
     // $navbar-light-disabled-color: rgba($black, .3); $navbar-light-disabled-color: $navbar-light-disabled-color !global; // rgba($black, .3)
     // $navbar-light-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-light-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>"); $navbar-light-toggler-icon-bg: $navbar-light-toggler-icon-bg !global; // url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-light-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>")
