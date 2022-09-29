@@ -394,7 +394,7 @@
     // $enable-button-pointers: true; $enable-button-pointers: $enable-button-pointers !global; // true
     // $enable-rfs: true; $enable-rfs: $enable-rfs !global; // true
     // $enable-validation-icons: true; $enable-validation-icons: $enable-validation-icons !global; // true
-    $enable-negative-margins: false; $enable-negative-margins: $enable-negative-margins !global; // false
+    $enable-negative-margins: true; $enable-negative-margins: $enable-negative-margins !global; // false
     // $enable-deprecation-messages: true; $enable-deprecation-messages: $enable-deprecation-messages !global; // true
     // $enable-important-utilities: true; $enable-important-utilities: $enable-important-utilities !global; // true
 
@@ -1077,7 +1077,7 @@
 
     // Navbar
 
-    $navbar-padding-y: $spacer * 2/3; $navbar-padding-y: $navbar-padding-y !global; // $spacer * .5
+    $navbar-padding-y: $spacer * 2 / 3; $navbar-padding-y: $navbar-padding-y !global; // $spacer * .5
     // $navbar-padding-x: null; $navbar-padding-x: $navbar-padding-x !global; // null
 
     // $navbar-nav-link-padding-x: .5rem; $navbar-nav-link-padding-x: $navbar-nav-link-padding-x !global; // .5rem
