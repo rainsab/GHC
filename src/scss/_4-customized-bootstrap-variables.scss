@@ -1213,15 +1213,15 @@
 
     // Cards
 
-    $card-spacer-y: $spacer * 1.5; $card-spacer-y: $card-spacer-y !global; // $spacer
-    $card-spacer-x: $spacer * 1.5; $card-spacer-x: $card-spacer-x !global; // $spacer
+    // $card-spacer-y: $spacer; $card-spacer-y: $card-spacer-y !global; // $spacer
+    // $card-spacer-x: $spacer; $card-spacer-x: $card-spacer-x !global; // $spacer
     $card-title-spacer-y: 0; $card-title-spacer-y: $card-title-spacer-y !global; // $spacer * .5
     // $card-border-width: $border-width; $card-border-width: $card-border-width !global; // $border-width
     // $card-border-color: var(--#{$prefix}border-color-translucent); $card-border-color: $card-border-color !global; // var(--#{$prefix}border-color-translucent)
     // $card-border-radius: $border-radius; $card-border-radius: $card-border-radius !global; // $border-radius
     // $card-box-shadow: null; $card-box-shadow: $card-box-shadow !global; // null
     // $card-inner-border-radius: subtract($card-border-radius, $card-border-width); $card-inner-border-radius: $card-inner-border-radius !global; // subtract($card-border-radius, $card-border-width)
-    $card-cap-padding-y: $spacer * 0.875; $card-cap-padding-y: $card-cap-padding-y !global; // $card-spacer-y * .5
+    $card-cap-padding-y: $spacer * 0.5; $card-cap-padding-y: $card-cap-padding-y !global; // $card-spacer-y * .5
     // $card-cap-padding-x: $card-spacer-x; $card-cap-padding-x: $card-cap-padding-x !global; // $card-spacer-x
     // $card-cap-bg: rgba($black, .03); $card-cap-bg: $card-cap-bg !global; // rgba($black, .03)
     // $card-cap-color: null; $card-cap-color: $card-cap-color !global; // null
