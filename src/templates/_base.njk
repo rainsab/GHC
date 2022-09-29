@@ -37,18 +37,17 @@
 
         </main>
 
-        <footer class="text-center text-light bg-dark">
-            <section class="navbar navbar-expand justify-content-center py-5">
-                <div class="navbar-nav gap-3">
-                    <a class="nav-link link-info p-1" href="/">Home</a>
-                    <a class="nav-link link-info p-1" href="/menu">Menu</a>
-                    <a class="nav-link link-info p-1" href="/coffee">Coffee</a>
-                    <a class="nav-link link-info p-1" href="/our-story">Our Story</a>
-                </div>
+        <footer class="text-center text-light bg-dark d-root">
+            <section class="nav justify-content-center py-5 gap-3">
+                <a class="nav-link {% block footerNavIndex %}{% endblock %} p-1" href="/">Home</a>
+                <a class="nav-link {% block footerNavMenu %}{% endblock %} p-1" href="/menu">Menu</a>
+                <a class="nav-link {% block footerNavCoffee %}{% endblock %} p-1" href="/coffee">Coffee</a>
+                <a class="nav-link {% block footerNavOurStory %}{% endblock %} p-1" href="/our-story">Our Story</a>
             </section>
 
-            <p class="h5 pt-md-2">#hipstersmakecoffee</p>
-            <p class="m-0 pb-6 pb-md-5">Follow us on
+            <p class="h5 mt-md-2">#hipstersmakecoffee</p>
+            <p class="m-0 mb-6 mb-md-5">
+                Follow us on
                 <a class="link-info" href="#">Twitter</a>
                 and
                 <a class="link-info" href="#">Instagram</a>
