@@ -14,44 +14,43 @@
         </title>
     </head>
     <body>
-        <header class="bg-light">
-            <div class="container">
-                <div class="navbar navbar-expand flex-column flex-md-row justify-content-md-between">
+        <header class="bg-light mb-3">
+            <div class="container px-3">
+                <div class="navbar navbar-expand flex-column flex-md-row justify-content-md-between gap-1">
                     <a class="nav-brand" href="/">
                         <img src="/svg/logo.svg" alt="Generic Hipster Coffee" width="178" height="178">
                     </a>
                     <nav class="navbar-nav">
-                        <a class="px-3 nav-link" href="/">Home</a>
-                        <a class="px-3 nav-link" href="/menu">Menu</a>
-                        <a class="px-3 nav-link" href="/coffee">Coffee</a>
-                        <a class="px-3 nav-link" href="/our-story">Our&nbsp;Story</a>
+                        <a class="nav-link {% block navIndex %}{% endblock %} ms-md-3" href="/">Home</a>
+                        <a class="nav-link {% block navMenu %}{% endblock %} ms-md-3" href="/menu">Menu</a>
+                        <a class="nav-link {% block navCoffee %}{% endblock %} ms-md-3" href="/coffee">Coffee</a>
+                        <a class="nav-link {% block navOurStory %}{% endblock %} ms-md-3" href="/our-story">Our&nbsp;Story</a>
                     </nav>
                 </div>
             </div>
         </header>
         
 
-        <main class="container">
+        <main class="container px-3">
 
             {% block content %}{% endblock %}
 
         </main>
 
-        <footer class="text-center text-bg-dark p-3">
-            <section class="navbar navbar-expand justify-content-center">
-                <div class="navbar-nav">
-                    <a class="nav-link link-info" href="/">Home</a>
-                    <a class="nav-link link-info" href="/menu">Menu</a>
-                    <a class="nav-link link-info" href="/coffee">Coffee</a>
-                    <a class="nav-link link-info" href="/our-story">Our Story</a>
-                </div>
+        <footer class="text-center text-light bg-dark d-root">
+            <section class="nav justify-content-center py-5 gap-3">
+                <a class="nav-link {% block footerNavIndex %}{% endblock %} p-1" href="/">Home</a>
+                <a class="nav-link {% block footerNavMenu %}{% endblock %} p-1" href="/menu">Menu</a>
+                <a class="nav-link {% block footerNavCoffee %}{% endblock %} p-1" href="/coffee">Coffee</a>
+                <a class="nav-link {% block footerNavOurStory %}{% endblock %} p-1" href="/our-story">Our Story</a>
             </section>
 
-            <p class="h5 text-uppercase">#hipstersmakecoffee</p>
-            <p>Follow us on
-                <a class="text-info" href="#">Twitter</a>
+            <p class="h5">#hipstersmakecoffee</p>
+            <p class="m-0 mb-6 mb-md-5">
+                Follow us on
+                <a class="link-info" href="#">Twitter</a>
                 and
-                <a class="text-info" href="#">Instagram</a>
+                <a class="link-info" href="#">Instagram</a>
             </p>
         </footer>
         {#

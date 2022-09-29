@@ -13,3 +13,13 @@ h6,
     letter-spacing: 0.07em;
     text-transform: uppercase;
 }
+
+.d-root {
+    display: flow-root;
+}
+
+.nav {
+    .active {
+        color: $light;
+    }
+}
