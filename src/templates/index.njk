@@ -1,6 +1,9 @@
 {% extends '_base.njk' %}
 
 
+{% block navIndex %}active{% endblock %}
+{% block footerNavIndex %}active{% endblock %}
+
 {% block content %}  
     <h1>Generic Hipster Coffee</h1>
     <p class="h2">Specialty coffee, fresh food &amp; local community</p>
@@ -31,6 +34,7 @@
     </section>
 
     <div id="map" class="ratio ratio-16x9"></div>
+
 {% endblock %}
 
 
