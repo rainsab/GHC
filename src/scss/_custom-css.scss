@@ -14,12 +14,10 @@ h6,
     text-transform: uppercase;
 }
 
-.d-root {
+.custom-flow-root {
     display: flow-root;
 }
 
-.nav {
-    .active {
-        color: $light;
-    }
+.nav .active {
+    color: $light;
 }
