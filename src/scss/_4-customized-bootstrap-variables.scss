@@ -394,7 +394,7 @@
     // $enable-button-pointers: true; $enable-button-pointers: $enable-button-pointers !global; // true
     // $enable-rfs: true; $enable-rfs: $enable-rfs !global; // true
     // $enable-validation-icons: true; $enable-validation-icons: $enable-validation-icons !global; // true
-    $enable-negative-margins: false; $enable-negative-margins: $enable-negative-margins !global; // false
+    $enable-negative-margins: true; $enable-negative-margins: $enable-negative-margins !global; // false
     // $enable-deprecation-messages: true; $enable-deprecation-messages: $enable-deprecation-messages !global; // true
     // $enable-important-utilities: true; $enable-important-utilities: $enable-important-utilities !global; // true
 
@@ -424,6 +424,7 @@
         2: $spacer * .5,
         3: $spacer,
         4: $spacer * 1.5,
+        45: $spacer * 2,
         5: $spacer * 3.375,
         6: $spacer * 5.5
     ); $spacers: $spacers !global;
@@ -506,7 +507,7 @@
     // Set the number of columns and specify the width of the gutters.
 
     // $grid-columns: 12; $grid-columns: $grid-columns !global; // 12
-    // $grid-gutter-width: 1.5rem; $grid-gutter-width: $grid-gutter-width !global; // 1.5rem
+    $grid-gutter-width: 3rem; $grid-gutter-width: $grid-gutter-width !global; // 1.5rem
     // $grid-row-columns: 6; $grid-row-columns: $grid-row-columns !global; // 6
 
     // Container padding
@@ -1076,7 +1077,7 @@
 
     // Navbar
 
-    $navbar-padding-y: $spacer * 2/3; $navbar-padding-y: $navbar-padding-y !global; // $spacer * .5
+    $navbar-padding-y: $spacer * 2 / 3; $navbar-padding-y: $navbar-padding-y !global; // $spacer * .5
     // $navbar-padding-x: null; $navbar-padding-x: $navbar-padding-x !global; // null
 
     // $navbar-nav-link-padding-x: .5rem; $navbar-nav-link-padding-x: $navbar-nav-link-padding-x !global; // .5rem
