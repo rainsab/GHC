@@ -22,7 +22,7 @@ h6,
     color: $light;
 }
 
-@media (min-width: 992px) {
+@include media-breakpoint-up(lg) {
     .nav-brand img {
         width: 240px;
         height: auto;
