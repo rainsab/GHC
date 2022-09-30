@@ -21,3 +21,10 @@ h6,
 .nav .active {
     color: $light;
 }
+
+@include media-breakpoint-up(lg) {
+    .nav-brand img {
+        width: 240px;
+        height: auto;
+    }
+}
