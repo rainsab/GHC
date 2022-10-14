@@ -16,11 +16,6 @@
     </p>
     <p>You can currently buy these beans in 350g bags.</p>
 
-    {% for coffee in coffees %}
-        <pre>{{ coffee | dump(4) }}</pre>
-    {% endfor %}
-
-
     <div class="row row-cols-1 row-cols-md-2 g-4 mb-3 mb-md-4">
         {% for coffee in coffees %}
         <section class="col">
@@ -34,7 +29,11 @@
                 <img 
                 class="card-img-top border-top" 
                 src="/img/coffees/{{ coffee.image }}"
-                srcset=""
+                srcset="
+                    {% for image in coffee.images %}
+                    /img/coffees/{{ image.fileName }} {{ image.width }}w{% if not loop.last %},{% endif %}
+                    {% endfor %}
+                    "
                 sizes="
                     (min-width: 1200px) 528px,
                     (min-width: 992px) 438px,
@@ -47,7 +46,7 @@
                 height=""
                 >
                 <div class="card-body mb-3">
-                    <p class="card-text fst-italic">{{ coffee.tastes[0] }} / {{ coffee.tastes[1] }} / {{ coffee.tastes[2] }}</p>
+                    <p class="card-text fst-italic">{{ coffee.tastes | join(" / ") }}</p>
                     <p class="card-text">{{ coffee.shortDescription }}</p>
                 </div>
             </div>
