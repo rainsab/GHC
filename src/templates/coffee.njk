@@ -18,39 +18,39 @@
 
     <div class="row row-cols-1 row-cols-md-2 g-4 mb-3 mb-md-4">
         {% for coffee in coffees %}
-        <section class="col">
-            <div class="card bg-light border-0 h-100">
-                <div class="card-header bg-light">
-                    <h2 class="card-title">
-                        <span class="d-inline-block">{{ coffee.name }}</span>
-                        <span class="d-inline-block">({{ coffee.origin }})</span>
-                    </h2>
+            <section class="col">
+                <div class="card bg-light border-0 h-100">
+                    <div class="card-header bg-light">
+                        <h2 class="card-title">
+                            <span class="d-inline-block">{{ coffee.name }}</span>
+                            <span class="d-inline-block">({{ coffee.origin }})</span>
+                        </h2>
+                    </div>
+                    <img 
+                        class="card-img-top border-top" 
+                        src="/img/coffees/{{ coffee.imageSrc }}"
+                        srcset="
+                            {% for image in coffee.images %}
+                                /img/coffees/{{ image.fileName }} {{ image.width }}w{% if not loop.last %},{% endif %}
+                            {% endfor %}
+                            "
+                        sizes="
+                            (min-width: 1200px) 528px,
+                            (min-width: 992px) 438px,
+                            (min-width: 768px) 318px,
+                            (min-width: 576px) 492px,
+                            calc(100vw - 2 * 1.5rem)
+                            "
+                        alt=""
+                        width="coffee.imageWidth"
+                        height="coffee.imageWidth"
+                    >
+                    <div class="card-body mb-3">
+                        <p class="card-text fst-italic">{{ coffee.tastes | join(" / ") }}</p>
+                        <p class="card-text">{{ coffee.shortDescription }}</p>
+                    </div>
                 </div>
-                <img 
-                class="card-img-top border-top" 
-                src="/img/coffees/{{ coffee.image }}"
-                srcset="
-                    {% for image in coffee.images %}
-                    /img/coffees/{{ image.fileName }} {{ image.width }}w{% if not loop.last %},{% endif %}
-                    {% endfor %}
-                    "
-                sizes="
-                    (min-width: 1200px) 528px,
-                    (min-width: 992px) 438px,
-                    (min-width: 768px) 318px,
-                    (min-width: 576px) 492px,
-                    calc(100vw - 2 * 1.5rem)
-                    "
-                alt=""
-                width=""
-                height=""
-                >
-                <div class="card-body mb-3">
-                    <p class="card-text fst-italic">{{ coffee.tastes | join(" / ") }}</p>
-                    <p class="card-text">{{ coffee.shortDescription }}</p>
-                </div>
-            </div>
-        </section>
+            </section>
         {% endfor %}
     </div>
 {% endblock %}
