@@ -28,3 +28,19 @@ h6,
         height: auto;
     }
 }
+
+@media print {
+    * {
+        color: black;
+    }
+
+    .navbar-nav,
+    footer {
+        display: none!important;
+    }
+
+    .nav-brand img {
+        width: 105px!important;
+        height: auto;
+    }
+  }
