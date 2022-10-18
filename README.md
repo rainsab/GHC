@@ -1,8 +1,8 @@
 # Generic Hipster Coffee
 
-##https://rainsab-ghc.surge.sh/
+Website for fictive cafe created using HTML, Sass, Bootstrap and Nunjucks, based on a template from Figma.
 
-### Website for fictive cafe created using HTML, Sass, Bootstrap and Nunjucks, based on a template from Figma.
+See in action https://rainsab-ghc.surge.sh/
 
 Includes:
 
@@ -19,9 +19,7 @@ Includes:
 
 ## First time installation
 
-### Install latest [node.js](https://nodejs.org/)
-
-### Install all packages from `package.json` locally (Needs latest [node.js](https://nodejs.org/)
+### Install all packages from `package.json` locally (Needs latest [node.js](https://nodejs.org/))
 
 ```shell
 npm ci
@@ -53,16 +51,15 @@ This build uses all generated HTML files for _UnCSS_. If it removes something yo
 
 `index.css` is compiled from `src/scss/index.scss` by [Sass](http://sass-lang.com/).
 
-
 ## HTML (Nunjucks templates)
-
-[Documentation for Nunjucks](https://mozilla.github.io/nunjucks/templating.html).
 
 HTML is generated from [Nunjucks](https://mozilla.github.io/nunjucks/) templates in `src/templates`.
 
-If you need some data to be available in all templates, use `templates/data.json` for that.
+[Documentation for Nunjucks](https://mozilla.github.io/nunjucks/templating.html).
 
-If you don't want a template to be turned into HTML file start it with `_`. Typically these are templates used for _include_ or _extend_.
+You don't need to leverage the power of templates. You can just create plain HTML files with `*.njk` extension.
+
+If you need some data to be available in all templates, use `templates/data.json` for that.
 
 ## Static files (JavaScript, images, …)
 
@@ -82,8 +79,9 @@ Upload everything in `/dist/` folder to the server.
 
 #### Surge.sh
 
-1. If you don’t have a surge account: run surge client with `npx surge` in `/dist` folder to create it.
-1. Set your own domain in `package.json` (just replace `https://my-first-bootstrap-5-website.surge.sh` with yours).
+I use surge.sh for this project.
+
+1. You need surge account. If you don’t have one, then run surge client with `npx surge` in `/dist` folder to create it.
 1. From now on run `npm run deploy` whenever you want to publish a new version.
 
-You can visit this site [HERE](https://rainsab-ghc.surge.sh/).
+If you want acces to https://rainsab-ghc.surge.sh/, fell free to can contact me.
