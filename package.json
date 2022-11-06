@@ -56,5 +56,8 @@
     "iOS >= 12",
     "Safari >= 12",
     "not Explorer <= 11"
-  ]
+  ],
+  "dependencies": {
+    "caniuse-lite": "^1.0.30001430"
+  }
 }
